@@ -3,14 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Font css */
+/*....... Font-atyle-css......*/
 
 body{
     font-family: 'Montserrat', sans-serif;
     
 }
-/* common css */
-.container{
+/* .....Common-style-css........*/
+.section-container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
@@ -18,7 +18,7 @@ body{
 }
 
 
-.primary-button{
+.first-button{
     outline: 0;
     border: 0;
     border-radius: 15px ;
@@ -31,12 +31,12 @@ body{
     position: relative;
     top: 0;
 }
-.primary-button:active{
+.first-button:active{
     box-shadow: 0 2px 0 #a7184c ;
     top: 5px;
 }
     
-/* Heading and nav bar css */
+/* .......Heading and nav bar css....... */
 nav{
     display: flex;
     justify-content: space-between;
@@ -47,28 +47,28 @@ nav{
 nav h3{
     font-size: 25px;
 }
-.navigation{
+.navigation-bar{
     display: flex;
 
 }
-.navigation li{
+.navigation-bar li{
     list-style: none;
     margin: 10px;
     
 }
-.navigation li a{
+.navigation-bar li a{
     text-decoration: none;
     color: black;
     font-weight: 600;
 }
-nav .navigation li a:hover{
+nav .navigation-bar li a:hover{
     background-color:#787885;
     
 }
-#nav-tog{
+#nav-tag{
     display: none;
 }
-.nav-tog-icon{
+.nav-bar-icon{
     display: none;
     color: black;
     font-size: 30px;
@@ -99,7 +99,7 @@ nav .navigation li a:hover{
     transform: scale(1.3);
     transition: transform 2s ease-in-out;
 }
-/* company logo css */
+/* .......company logo css .........*/
 .compay-logo{
     padding: 10% 0;
 }
@@ -116,9 +116,9 @@ nav .navigation li a:hover{
 .logo img{
     width: 55px;
     margin: 0 23px;
-    /* padding: 3%; */
+    
 }
-/* Popular collection css */
+
 .section-title{
     
     text-align: center;
@@ -186,8 +186,8 @@ span{
     padding-top: 5%;
 }
     
-}
-/* banner part css */
+
+/* ......Banner-css....... */
 .banner{
     padding-top: 100px;
 }
@@ -219,7 +219,7 @@ span{
     color: white;
 
 }
-/* Subscribe part css */
+/* Subscribe-css */
 .subscrib-section{
     height: 40vh;
     background-color: black;
@@ -264,7 +264,7 @@ span{
     padding: 10px 15px;
     margin-left: 60px;
 }
-/* contact css */
+/* ......Contact-css ......*/
 .contact{
    margin-top: 100px;
 }
@@ -292,7 +292,7 @@ span{
     font-size: 16px;
     padding: 10px 15px;
 }
-/* footer css */
+/* ......Footer-css..... */
 
 footer{
     display: flex;
@@ -317,7 +317,7 @@ footer .icon{
     
 
 }
-/* responsive css */
+/* ......Responsive-css-using media query...... */
 @media (max-width:1050px) {
     .populer-collection,
     .heading-main{
@@ -339,12 +339,7 @@ footer .icon{
         grid-template-columns: 1fr;
         height: fit-content;
     }
-    /* .banner-bg{
-        background-size: 100% 90%;
-    }
-    .subscrib-section{
-        height: 30vh;
-} */
+    
     .nav-tog-icon{
          display: block;
     }
@@ -383,7 +378,7 @@ footer .icon{
     .heading-main{
         grid-template-columns: 1fr;
     }
-    .heading-main.primary-button{
+    .heading-main.first-button{
         padding-left: 30%;
     }
     .heading-left{
@@ -401,10 +396,6 @@ footer .icon{
         flex-wrap: wrap;
         
     }
-    /* .banner-bg{
-        background-size: 100% 100%;
-    }
-    .subscrib-section{
-        height: 40vh; */
+    
        
 }
