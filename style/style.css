@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Font css */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+/* common css */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
+
+
+.primary-button{
+    outline: 0;
+    border: 0;
+    border-radius: 15px ;
+    padding: 10px 15px;
+    background-image: linear-gradient(900deg, #E02C6D, #E02C6D);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #a7184c ;
+    position: relative;
+    top: 0;
+}
+.primary-button:active{
+    box-shadow: 0 2px 0 #a7184c ;
+    top: 5px;
+}
+    
+/* Heading and nav bar css */
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+nav h3{
+    font-size: 25px;
+}
+.navigation{
+    display: flex;
+
+}
+.navigation li{
+    list-style: none;
+    margin: 10px;
+    
+}
+.navigation li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+nav .navigation li a:hover{
+    background-color:#787885;
+    
+}
+#nav-tog{
+    display: none;
+}
+.nav-tog-icon{
+    display: none;
+    color: black;
+    font-size: 30px;
+}
+.heading-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.heading-left{
+    padding-top: 8%;
+}
+.heading-left h1{
+    font-size: 52px;
+    margin-bottom: 16px;
+}
+.heading-left p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+.heading-right img{
+    width: 80%;
+    min-height: 400px;
+    padding-left: 20%;
+}
+.heading-right:hover .photo{
+    transform: scale(1.3);
+    transition: transform 2s ease-in-out;
+}
+/* company logo css */
+.compay-logo{
+    padding: 10% 0;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1px solid lightsteelblue;
+    border-left: none;
+    border-right: none;
+    padding: 2% 0;
+    
+}
+.logo img{
+    width: 55px;
+    margin: 0 23px;
+    /* padding: 3%; */
+}
+/* Popular collection css */
+.section-title{
+    
+    text-align: center;
+    margin: 30px 0;
+}
+.populer-collection{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    
+}
+.box-model{
+    width: 329px;
+    margin: 0 auto;
+    box-shadow: 0 30px 35px rgba(0,0,0,0.2);
+    padding: 17px 14px;
+    border-radius: 5px;
+    background-color: transparent;
+   
+    
+
+}
+.box-model img{
+    width: 100%;
+}
+.box-model h3{
+    padding-top: 16px;
+    padding-bottom: 6px;
+}
+.box-model h4{
+    padding-bottom: 6px;
+    font-weight: 500;
+}
+.rating{
+    padding-bottom: 6px;
+}
+.fa-star{
+    color: orange;
+}
+.fa-star-half-alt{
+    color: orange;
+}
+span{
+    padding-left: 5%;
+    font-weight: 600;
+    color: #5E6366;
+}
+.box-model p{
+    padding-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color:  #787885;
+
+}
+.see-more{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #E02C6DDE;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+    
+}
+/* banner part css */
+.banner{
+    padding-top: 100px;
+}
+.banner-bg{
+    height: 100vh;
+    background-image: url(../images/bg/pexels-jessica-lewis-creative-593324.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.banner-title{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    padding-top: 10%;
+
+}
+.banner-title h1{
+    font-size: 52px; 
+    text-transform: uppercase;
+    color: white;
+    
+}
+.banner-title h2{
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 20px 0;
+    color: white;
+
+}
+/* Subscribe part css */
+.subscrib-section{
+    height: 40vh;
+    background-color: black;
+    
+}
+
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px; 
+   
+}
+.subscribe h2{
+    margin: 10px 0;
+    padding: 10px 0;
+    color: white;
+    
+
+}
+.subscribe p{
+    margin: 10px 0;
+    color: white;
+  
+   
+}
+.email-feild{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    outline: 0; 
+    
+}
+.subscribe-button{
+    outline: 0;
+    border: 0;
+    border-radius: 5px ;
+    background-image: linear-gradient(red, red);
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-left: 60px;
+}
+/* contact css */
+.contact{
+   margin-top: 100px;
+}
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-feild{
+    width: 50%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid grey; 
+}
+.contact-button{
+    outline: 0;
+    border: 0;
+    border-radius: 5px ;
+    background-image: linear-gradient(black, black);
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+/* footer css */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 30px 0;
+    margin-top: 100px;
+    color: white;
+    background-color: black;
+}
+footer .icon{
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    
+
+}
+/* responsive css */
+@media (max-width:1050px) {
+    .populer-collection,
+    .heading-main{
+        grid-template-columns: 1fr 1fr;
+    }
+    .heading-left{
+        font-size: 45px;
+    }
+    
+    .banner h1{
+        font-size: 45px;
+    }
+    .banner h2{
+        font-size: 35px;
+    }
+}
+@media (max-width:800px) {
+    .populer-collection{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+    /* .banner-bg{
+        background-size: 100% 90%;
+    }
+    .subscrib-section{
+        height: 30vh;
+} */
+    .nav-tog-icon{
+         display: block;
+    }
+    .navigation{
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(235, 135, 227, 0.521);
+        padding: 20px 0 ;
+        transform: translateY(-370px);
+        transition: .7s ease-in-out;
+    } 
+    #nav-tog:checked ~ .navigation{
+        transform: translateY(0px);
+    }
+    .logo{
+        flex-wrap: wrap;
+    } 
+    .subscrib-section{
+        height: 40vh; 
+    }
+    .subscrib-section{
+        height: 50vh;
+    }
+    .subscribe-button{
+        margin-left: 30px;
+    }         
+}
+
+
+
+@media (max-width:600px) {
+    .heading-main{
+        grid-template-columns: 1fr;
+    }
+    .heading-main.primary-button{
+        padding-left: 30%;
+    }
+    .heading-left{
+        order: 2;
+       
+    }
+    .heading-right img{
+        width: 100%;
+
+    }
+    .heading-left h1{
+        font-size: 30px;
+    }
+    .logo{
+        flex-wrap: wrap;
+        
+    }
+    /* .banner-bg{
+        background-size: 100% 100%;
+    }
+    .subscrib-section{
+        height: 40vh; */
+       
+}
